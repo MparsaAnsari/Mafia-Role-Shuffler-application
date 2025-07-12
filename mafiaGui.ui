@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mafs</class>
+ <widget class="QWidget" name="Mafs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>713</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="mafsGB">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>711</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QListWidget" name="availableRolesList">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>151</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 10px;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>رییس مافیا</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>مذاکره‌کننده</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>مافیا ساده</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>افسون‌گر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ناتو</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ترور</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>جادوگر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ناتاشا</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>وکیل</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>دزد</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>خرابکار</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>شهر ساده</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>دکتر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>کاراگاه</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>اسنایپر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>خبرنگار</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>زره‌پوش</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>تفنگ‌دار</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>تکاور</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>نگهبان</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>قاضی</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>کابوی</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>آهنگر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ساقی</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>گورکن</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>کشیش</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>مسیح</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ماسون</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>تایلر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>پرستار</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>انگل</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>دلقک</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>قلدر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>هفت‌تیرکش</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>سایه</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>نقش‌های موجود</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>نقش‌های دک جدید</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="generatedRoleList">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>60</y>
+      <width>151</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveDeckPB">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>420</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 salmon);
+border-width: 5px;
+border-radius: 10px;
+font: 75 bold 9pt &quot;Cambria&quot;;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>ذخیره</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>دک‌های موجود</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="genRolesPB">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>400</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 orange);
+border-width: 5px;
+border-radius: 10px;
+font: 75 bold 9pt &quot;Cambria&quot;;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>نقش بده</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>30</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>نقش‌های داده شده برای بازی</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>400</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Count:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>395</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>نام نفش جدید</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="newRoleTB">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 5px;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addRolePB">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>420</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 coral);
+border-width: 5px;
+border-radius: 10px;
+font: 75 bold 9pt &quot;Cambria&quot;;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>اضافه</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="selectedRoleList">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>60</y>
+      <width>141</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="deckNameTB">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>420</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 5px;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>395</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>نام دک جدید</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="countLabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+border-style: outset;
+border-width: 2px;
+border-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="availableDecksList">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>60</y>
+      <width>191</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+background: white;
+border: 1px solid darkgray;
+border-radius: 20px;
+padding: 10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>510</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>7</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>By: Mary Juana</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearPB">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>440</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 goldenrod);
+border-width: 5px;
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>پاک کردن نقش‌های دک</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeDeckPB">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>470</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 firebrick);
+border-width: 5px;
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>حذف دک</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeRolePB">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 orangered);
+border-width: 5px;
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>حذف نقش</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="instantAddPB">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string comment="این دکمه نقش انتخاب شدن در ستون نقش‌های موجود را به ستون نقش‌های داده شده برای بازی اضافه می‌کند. استفاده آن برای زمانی است که یکی دو نقش اضافه قرار است به یک دک اضافه شوند."/>
+    </property>
+    <property name="toolTipDuration">
+     <number>3</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:  rgb(232, 232, 232);
+}
+
+QPushButton{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 gold);
+border-width: 5px;
+border-radius: 10px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(111, 111, 111);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>اضافه به نقش‌های بازی</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
